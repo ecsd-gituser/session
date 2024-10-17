@@ -2,9 +2,13 @@
   "manifest_version": 2,
   "name": "Session Timeout Test",
   "version": "1.0",
-  "description": "Test extension with 1-minute session timeout",
+  "description": "Test extension with 1-minute session timeout for kiosk app",
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv8Iu8fLhgBdHnrfPZgbKfZzDpGxCfPUBFjVCbz7Iqo3Ij9BYxZBsKNNFBBkGmZtXRqCGzIeEfkgTlZXGHyoFt1ywbTbXbkNnRBbJ+9Uh+Ub4AzQOGvLpT6ZYdnWzwJjlVXTLZNAkDJNKdqPKNxLqBqDrFgcTnZVWKPOUwKWEzHZCjuXxqRrKmvvvLXVlBBBiCWjIQZhCNZvFLOdLKCLzxjvBBFCzUoRvqHxKqXRXLOyVVVEVSZUmZWTlFmRZYwCNkNVDdIrUlEkqHIHHFgwXOAOTgPPQDVOFNBDPSRhbcKOHQz1Yt/9Ck5Ib7PV2Ot+Jh7Vy+iBJZYOZDKKNfzMwIDAQAB",
-  "permissions": ["alarms"],
+  "permissions": [
+    "alarms",
+    "system.display",
+    "power"
+  ],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
